@@ -1,0 +1,160 @@
+:root {
+    --primary-color: rgb(98, 22, 196);
+    --secondary-color: rgb(242, 242, 242);
+    --background-color: #121212;
+    --text-color: rgb(219, 219, 219);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+nav li {
+    padding: 12px 40px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.li1 {
+    background-color: var(--primary-color);
+    width: 210px;
+}
+
+.li1 a {
+    color: white;
+}
+
+.li2,
+.li3,
+.li4,
+.li5 {
+    background-color: var(--secondary-color);
+    width: 210px;
+}
+
+main {
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+    margin: 5px auto;
+    width: 92vw;
+    height: 130vh;
+    background:linear-gradient(135deg, rgba(97, 22, 196, 0.429) 0%,transparent 25%),
+    linear-gradient(-130deg,rgba(255, 255, 255, 0.227) 0%,transparent 45%),
+    var(--background-color);
+    border-radius: 20px;
+}
+
+/* Lingkaran besar */
+.circle-1 {
+    position: absolute;
+    width: 750px;
+    height: 750px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.108);
+    z-index: 1;
+    opacity: 0.7;
+    filter: blur(4px);
+    box-shadow: 4px -3px 72px 0px rgba(157, 157, 157, 0.75);
+}
+
+/* Lingkaran kecil */
+.circle-2 {
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    z-index: 1;
+    filter: blur(3px);
+    opacity: 0.7;
+    box-shadow: 4px -3px 25px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* .circle-3 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-110%, -50%);
+    border-radius: 50%;
+    background: rgba(97, 22, 196, 0.519);
+    z-index: 1;
+    filter: blur(40px);
+    opacity: 1;
+    box-shadow: 4px -3px 72px 0px rgba(157, 157, 157, 0.75);
+} */
+
+main h1 {
+    font-family: 'Anton', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: 250px;
+    margin-top: -20px;
+    letter-spacing: 10px;
+}
+
+.content {
+    margin-top: -170px;
+    flex-direction: column;
+    display: flex;
+}
+
+.text {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 100;
+    width: 400px;
+}
+
+.logo-portofolio {
+    display: flex;
+    gap: 10px;
+}
+
+.instagram-link,
+.whatsapp-link {
+    display: inline-block;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.social-icon {
+    margin-top: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    padding: 5px;
+}
