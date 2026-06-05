@@ -377,6 +377,9 @@ main h1 {
     flex-direction: column;
     padding: 20px;
     border-radius: 20px;
+}
+
+.section-content3 ul {
     position: absolute;
     top: 50%;
     right: 5%;
@@ -404,12 +407,14 @@ main h1 {
     background-position: center;
     background-color: var(--secondary-color);
     border-radius: 50%;
+    z-index: 1;
 }
 
 .section-content3 p {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 18px;
+    padding-left: 10px;
     width: 400px;
     line-height: 1.5;
     color: rgb(74, 74, 74);
@@ -418,4 +423,34 @@ main h1 {
 .circle {
     background-color: var(--secondary-color);
     width: 50px;
+    height: 50px;
+    transform: translate(-10px, 40px);
+    z-index: 0;
+    border-radius: 50%;
+}
+
+.inside-content3 {
+    width: 300px;
+    border-radius: 10px;
+    top: 0;
+    margin-left: 50px;
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+
+.inside-content3 h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 600;
+}
+
+.inside-content3 h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: rgb(60, 60, 60);
 }
