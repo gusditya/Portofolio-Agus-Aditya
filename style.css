@@ -36,10 +36,12 @@ nav li {
 nav a {
     text-decoration: none;
     color: black;
+    font-family: 'Poppins', sans-serif;
 }
 
 .li1 {
     background-color: var(--primary-color);
+    font-weight: 800;
     width: 210px;
 }
 
@@ -76,7 +78,7 @@ main {
     margin: 10px auto;
     width: 92%;
     min-height: 130vh;
-    overflow: visible;
+    overflow: hidden;
 
     background:linear-gradient(135deg, rgba(97, 22, 196, 0.429) 0%,transparent 25%),
     linear-gradient(-130deg,rgba(255, 255, 255, 0.227) 0%,transparent 30%),
@@ -93,24 +95,24 @@ main {
 /* Lingkaran besar */
 .circle-1 {
     position: absolute;
-    width: 650px;
-    height: 650px;
+    width: 700px;
+    height: 700px;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.108);
+    background: rgba(255, 255, 255, 0.16);
     z-index: 1;
     opacity: 0.7;
     filter: blur(4px);
-    box-shadow: 4px -3px 72px 0px rgba(157, 157, 157, 0.75);
+
 }
 
 /* Lingkaran kecil */
 .circle-2 {
     position: absolute;
-    width: 450px;
-    height: 450px;
+    width: 520px;
+    height: 520px;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -124,8 +126,8 @@ main {
 
 .profile-image {
     position: absolute;
-    width: 650px;
-    height: 650px;
+    width: 700px;
+    height: 700px;
     top: 55%;
     left: 50%;
     bottom: 0;
@@ -137,9 +139,9 @@ main {
 
 .circle-3 {
     position: absolute;
-    width: 500px;
-    height: 400px;
-    top: 55%;
+    width: 350px;
+    height: 200px;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
@@ -372,16 +374,16 @@ main h1 {
 }
 
 .section-content3 {
-    margin-left: 30px;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
 }
 
 .section-content3 ul {
     position: absolute;
-    top: 50%;
+    top: 45%;
     right: 5%;
 }
 
@@ -392,7 +394,7 @@ main h1 {
 .section-content3 li {
     display: flex;
     align-items: flex-start;
-    gap: 12px;
+    gap: 20px;
 }
 
 .section-content3 li::before {
@@ -405,9 +407,10 @@ main h1 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: var(--secondary-color);
+    background-color: var(--background-color);
     border-radius: 50%;
     z-index: 1;
+    fill: white;
 }
 
 .section-content3 p {
@@ -415,13 +418,13 @@ main h1 {
     font-weight: 300;
     font-size: 18px;
     padding-left: 10px;
-    width: 400px;
+    width: 420px;
     line-height: 1.5;
     color: rgb(74, 74, 74);
 }
 
-.circle {
-    background-color: var(--secondary-color);
+.circle-li {
+    background-color: var(--background-color);
     width: 50px;
     height: 50px;
     transform: translate(-10px, 40px);
@@ -429,13 +432,35 @@ main h1 {
     border-radius: 50%;
 }
 
+.box-information {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.wrap-inside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .inside-content3 {
-    width: 300px;
+    width: 260px;
     border-radius: 10px;
     top: 0;
-    margin-left: 50px;
+    margin-left: 40px;
     padding: 20px;
     background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    box-shadow: 3px 3px 0 3px black;
+}
+
+.inside-content3:hover,
+.certificates:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
 }
 
 .inside-content3 h2 {
@@ -449,8 +474,47 @@ main h1 {
 .inside-content3 h3 {
     margin: 0;
     padding: 0;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     color: rgb(60, 60, 60);
+}
+
+.logo-trophy,
+.logo-website {
+    width: 70px;
+    height: auto;
+}
+
+.certificates {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    top: 0;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    box-shadow: 3px 3px 0 3px black;
+}
+
+.certificates h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+}
+
+.certificates h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: rgb(60, 60, 60);
+}
+
+.logo-sertifikat {
+    width: 120px;
+    height: auto;
+    padding: 10px;
 }
