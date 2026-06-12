@@ -93,7 +93,7 @@ main {
 
     background: linear-gradient(135deg, rgba(97, 22, 196, 0.429) 0%, transparent 25%),
         linear-gradient(-130deg, rgba(255, 255, 255, 0.227) 0%, transparent 30%),
-        var(--background-color);
+        black;
     border-radius: 20px;
     z-index: 1;
 }
@@ -936,10 +936,164 @@ main h1 {
     border-bottom: 1px solid rgb(165, 165, 165)
 }
 
-/* SECTION KEEMPAT */
+/* SECTION KETIGA */
 
 .section3 {
-    height: 200vh;
-    background-color: var(--soft-black-color);
+    height: 300vh;
+    background-color: black;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+}
+
+.title-section3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 30px;
+}
+
+.title1-section3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title1-section3 ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    color: white;
+    font-size: 25px;
+    width: 120px;
+}
+
+.title1-section3 h6 {
+    margin: 0;
+    padding: 0;
+    color: transparent;
+    position: relative;
+    -webkit-text-stroke: 1px rgb(177, 177, 177);
+}
+
+.title1-section3 h1 {
+    color: var(--white-color);
+    margin: 0;
+    padding: 0;
+    font-size: 60px;
+    width: 600px;
+}
+
+.title-section3 h4 {
+    margin: 0;
+    padding: 0;
+    color: var(--secondary-color);
+    font-weight: 400;
+    width: 500px;
+    line-height: 1.5;
+    color: rgb(202, 202, 202);
+}
+
+.project {
+    padding: 50px;
+    display: grid;
+    row-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.project-card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 180px;
+
+    background: linear-gradient(
+        to top,
+        rgb(0, 0, 0),
+        rgba(0, 0, 0, 0.547),
+        rgba(0, 0, 0, 0)
+    );
+
+    pointer-events: none;
+}
+
+.project1 img {
+    display: block;
+    width: 680px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project1 h2 {
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+    padding: 10px 0 0 20px;
+    color: white;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.project1 h4 {
+    margin: 0;
+    padding: 0 0 0 20px;
+    color: rgb(202, 202, 202);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.title2-section3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title2-section3 a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(202, 202, 202);
+    font-size: 18px;
+    width: 160px;
+}
+
+.title2-section3 a::before {
+    content: 'View All Projects →';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: var(--white-color);
+    -webkit-text-stroke: 0px transparent;
+    border-right: 2px solid var(--white-color);
+    overflow: hidden;
+    transition: width 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    white-space: nowrap;
+}
+
+.title2-section3 a:hover::before {
+    -webkit-text-stroke: 1px var(--white-color);
+    width: 100%;
+    border-bottom: 1px solid var(--white-color);
+}
+
+
+/* SECTION KEEMPAT*/
+.section4 {
+    height: 100vh;
 }
